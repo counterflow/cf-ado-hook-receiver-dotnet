@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AdoHookReceiver/AdoHookReceiver.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AdoHookReceiver.Tests/AdoHookReceiver.Tests.csproj" />
+  </Folder>
+</Solution>

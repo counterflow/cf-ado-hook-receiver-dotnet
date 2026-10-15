@@ -1,0 +1,172 @@
+{
+  "subscriptionId": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
+  "notificationId": 1,
+  "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+  "eventType": "build.complete",
+  "publisherId": "azure-devops",
+  "message": {
+    "text": "Build 20241202.1 succeeded",
+    "html": "Build <a href=\"https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5&amp;builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068\">20241202.1</a> succeeded",
+    "markdown": "Build [20241202.1](https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5&builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068) succeeded"
+  },
+  "detailedMessage": {
+    "text": "Build 20241202.1 succeeded",
+    "html": "Build <a href=\"https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5&amp;builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068\">20241202.1</a> succeeded",
+    "markdown": "Build [20241202.1](https://dev.azure.com/FabrikamFiber/web/build.aspx?pcguid=e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5&builduri=azure-devops%3a%2f%2f%2fBuild%2fBuild%2f2727068) succeeded"
+  },
+  "resource": {
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/FabrikamFiber/e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5/_apis/build/Builds/2727068"
+      },
+      "web": {
+        "href": "https://dev.azure.com/FabrikamFiber/e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5/_build/results?buildId=2727068"
+      },
+      "sourceVersionDisplayUri": {
+        "href": "https://dev.azure.com/FabrikamFiber/e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5/_apis/build/builds/2727068/sources"
+      },
+      "timeline": {
+        "href": "https://dev.azure.com/FabrikamFiber/e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5/_apis/build/builds/2727068/Timeline"
+      },
+      "badge": {
+        "href": "https://dev.azure.com/FabrikamFiber/e4e4e4e4-ffff-aaaa-bbbb-c5c5c5c5c5c5/_apis/build/status/4658"
+      }
+    },
+    "properties": {},
+    "tags": [],
+    "validationResults": [],
+    "plans": [
+      {
+        "planId": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa"
+      }
+    ],
+    "triggerInfo": {},
+    "id": 2727068,
+    "buildNumber": "20241202.1",
+    "status": "completed",
+    "result": "succeeded",
+    "queueTime": "2024-12-02T12:18:45.7367977Z",
+    "startTime": "2024-12-02T12:18:56.6205723Z",
+    "finishTime": "2024-12-02T12:21:08.520904Z",
+    "url": "https://dev.azure.com/FabrikamFiber/33dd33dd-ee44-ff55-aa66-77bb77bb77bb/_apis/build/Builds/2727068",
+    "definition": {
+      "drafts": [],
+      "id": 4658,
+      "name": "MainRepo (1)",
+      "url": "https://dev.azure.com/FabrikamFiber/33dd33dd-ee44-ff55-aa66-77bb77bb77bb/_apis/build/Definitions/4658?revision=1",
+      "uri": "azure-devops:///Build/Definition/4658",
+      "path": "\\",
+      "type": "build",
+      "queueStatus": "enabled",
+      "revision": 1,
+      "project": {
+        "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+        "name": "FabrikamFiberChat",
+        "url": "https://dev.azure.com/FabrikamFiber/_apis/projects/22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+        "state": "wellFormed",
+        "revision": 876,
+        "visibility": "organization",
+        "lastUpdateTime": "2024-04-06T14:51:16.337Z"
+      }
+    },
+    "buildNumberRevision": 1,
+    "project": {
+      "id": "33dd33dd-ee44-ff55-aa66-77bb77bb77bb",
+      "name": "FabrikamFiberChat",
+      "url": "https://dev.azure.com/FabrikamFiber/_apis/projects/33dd33dd-ee44-ff55-aa66-77bb77bb77bb",
+      "state": "wellFormed",
+      "revision": 876,
+      "visibility": "organization",
+      "lastUpdateTime": "2024-04-06T14:51:16.337Z"
+    },
+    "uri": "azure-devops:///Build/Build/2727068",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "a6a6a6a6-bbbb-cccc-dddd-e7e7e7e7e7e7",
+    "queue": {
+      "id": 4799,
+      "name": "Azure Pipelines",
+      "pool": {
+        "id": 112,
+        "name": "Azure Pipelines",
+        "isHosted": true
+      }
+    },
+    "priority": "normal",
+    "reason": "manual",
+    "requestedFor": {
+      "displayName": "Fabrikam Fiber",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/ffff5f5f-aa6a-bb7b-cc8c-dddddd9d9d9d/_apis/Identities/33dd33dd-ee44-ff55-aa66-77bb77bb77bb",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/aad.NTdhNWQ3OTQtOTc3My03YzMyLQJiYjYtNTUwNTg1Njk1MTE5"
+        }
+      },
+      "id": "66aa66aa-bb77-cc88-dd99-00ee00ee00ee",
+      "uniqueName": "chuck@FabrikamFiber.com",
+      "imageUrl": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/aad.NTdhNWQ3OTQtOTc1My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5",
+      "descriptor": "aad.NTdhNWQ3OTQtOTc6My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5"
+    },
+    "requestedBy": {
+      "displayName": "Chuck Reinhart",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/ffff5f5f-aa6a-bb7b-cc8c-dddddd9d9d9d/_apis/Identities/33dd33dd-ee44-ff55-aa66-77bb77bb77bb",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/aad.NTdhNWQ3OTQtOTc3My03YzMyLQJiYjYtNTUwNTg1Njk1MTE5"
+        }
+      },
+      "id": "22cc22cc-dd33-ee44-ff55-66aa66aa66aa",
+      "uniqueName": "chuck@FabrikamFiber.com",
+      "imageUrl": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/aad.NTdhNWQ3OTQtOTc1My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5",
+      "descriptor": "aad.NTdhNWQ3OTQtOTc6My03YzMyLWJiYjYtNTUwNTg1Njk1MTE5"
+    },
+    "lastChangedDate": "2024-12-02T12:21:08.96Z",
+    "lastChangedBy": {
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/ffff5f5f-aa6a-bb7b-cc8c-dddddd9d9d9d/_apis/Identities/11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC02ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA"
+        }
+      },
+      "id": "44ee44ee-ff55-aa66-bb77-88cc88cc88cc",
+      "uniqueName": "fabrikamfiber16@hotmail.com",
+      "imageUrl": "https://dev.azure.com/FabrikamFiber/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA2ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA2ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA"
+    },
+    "orchestrationPlan": {
+      "planId": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4"
+    },
+    "logs": {
+      "id": 0,
+      "type": "Container",
+      "url": "https://dev.azure.com/FabrikamFiber//_apis/build/builds/f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6/logs"
+    },
+    "repository": {
+      "id": "a6a6a6a6-bbbb-cccc-dddd-e7e7e7e7e7e7",
+      "type": "TfsGit",
+      "name": "MainRepo",
+      "url": "https://dev.azure.com/FabrikamFiber/FabrikamFiberChat/_git/FabrikamFiberChat",
+      "clean": null,
+      "checkoutSubmodules": false
+    },
+    "retainedByRelease": false,
+    "triggeredByBuild": null,
+    "appendCommitMessageToRunName": true
+  },
+  "resourceVersion": "2.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
+      "baseUrl": "https://dev.azure.com/FabrikamFiber/"
+    },
+    "account": {
+      "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
+      "baseUrl": "https://dev.azure.com/FabrikamFiber/"
+    },
+    "project": {
+      "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+      "baseUrl": "https://dev.azure.com/FabrikamFiber/"
+    }
+  },
+  "createdDate": "2024-12-02T12:21:13.8866607Z"
+}

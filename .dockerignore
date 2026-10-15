@@ -1,0 +1,11 @@
+# Never send local settings or build output into the image build.
+.env
+**/bin/
+**/obj/
+.git/
+.github/
+.vs/
+.vscode/
+docs/
+tests/
+*.md
