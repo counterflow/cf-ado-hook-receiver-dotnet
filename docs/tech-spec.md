@@ -174,8 +174,8 @@ Standard .NET configuration, nothing custom: `appsettings.json`, then `appsettin
 
 Local development:
 
-- The allow-list goes in `appsettings.Development.json`.
-- The password goes in user secrets, so it never lands in the repo: `dotnet user-secrets set "AdoHook:Password" "<password>"`.
+- The password and the allow-list go in user secrets, so neither lands in the repo: `dotnet user-secrets set "AdoHook:Password" "<password>"`, `dotnet user-secrets set "AdoHook:Allow:EventTypes:0" "<event type>"`, and so on.
+- `appsettings.Development.json` holds one placeholder per allow-list. Lists merge by index, so user-secrets entry `0` replaces the placeholder; a longer placeholder list would leave its later entries in force.
 
 Docker:
 

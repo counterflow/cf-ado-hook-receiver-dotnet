@@ -4,6 +4,8 @@ An ASP.NET Core minimal API (.NET 10) that receives Azure DevOps service hooks. 
 
 Nothing is accepted until the allow-list is configured: event types, organisations and projects are required, and the app refuses to start without them.
 
+**New here? Start with [USAGE.md](USAGE.md)**: from clone to receiving and reacting to ADO events.
+
 - [Tech spec](docs/tech-spec.md)
 - [Initial build plan](docs/initial-build-plan.md)
 
@@ -27,14 +29,18 @@ Nothing is accepted until the allow-list is configured: event types, organisatio
 
 Requires the .NET 10 SDK.
 
-1. Set the allow-list in `src/AdoHookReceiver/appsettings.Development.json`.
-2. Set the password in user secrets, so it stays out of the repo:
+1. Set the password and the allow-list in user secrets, so they stay out of the repo:
 
    ```bash
    dotnet user-secrets set "AdoHook:Password" "<password>" --project src/AdoHookReceiver
+   dotnet user-secrets set "AdoHook:Allow:EventTypes:0" "git.push" --project src/AdoHookReceiver
+   dotnet user-secrets set "AdoHook:Allow:Organizations:0" "<org base URL or account id>" --project src/AdoHookReceiver
+   dotnet user-secrets set "AdoHook:Allow:ProjectIds:0" "<project id>" --project src/AdoHookReceiver
    ```
 
-3. Run it, then send a test request:
+   `appsettings.Development.json` holds one placeholder per list; entry `0` replaces it, and more entries go in `:1`, `:2`, and so on.
+
+2. Run it, then send a test request:
 
    ```bash
    dotnet run --project src/AdoHookReceiver
