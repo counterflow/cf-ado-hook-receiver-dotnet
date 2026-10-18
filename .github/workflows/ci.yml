@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
+
+      - name: Build
+        run: dotnet build AdoHookReceiver.slnx -c Release
+
+      - name: Test
+        run: dotnet test --solution AdoHookReceiver.slnx -c Release --no-build
+
+      # Proves the image still builds; nothing is pushed until a registry is chosen.
+      - name: Docker build
+        run: docker build -t cf-ado-hook-receiver:ci .
